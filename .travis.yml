@@ -18,7 +18,7 @@ before_install:
  - docker build -t xecius/react-test -f ./client/Dockerfile.dev ./client
  
 script:
- - docker run -e CI=true Xecius/react-test npm test
+ - docker run -e CI=true xecius/react-test npm test
  
 deploy:
  provider: script
